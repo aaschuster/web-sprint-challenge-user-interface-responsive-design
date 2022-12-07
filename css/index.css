@@ -95,6 +95,10 @@ header {
     flex-direction: column;
 }
 
+h1 {
+    font-size: 6.5rem;
+}
+
 header h1, a, .fa-brands{
     color: rgb(225, 239, 230);
     text-align: center;
@@ -111,17 +115,20 @@ header h1, a, .fa-brands{
 #socials {
     display: flex;
     justify-content: space-evenly;
-    height: 5vh;
+    font-size: 2.5rem;
     width: 20%;
-}
-
-#socials i {
-    height: 5vh;    
+    align-items: center;
+    margin: 0.5%;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+}
+
+nav a {
+    font-size: 2rem;
 }
 
 /* spacers */
