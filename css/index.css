@@ -56,6 +56,7 @@ html {
     min-width: 428px;
     width: 100%;
     font-size: 62.5%;
+    background-color: rgb(0, 4, 17);
 }
 
 body {
@@ -99,7 +100,7 @@ h1 {
     font-size: 6.5rem;
 }
 
-header h1, a, .fa-brands{
+h1, h2, h3, p, a, .fa-brands{
     color: rgb(225, 239, 230);
     text-align: center;
 }
@@ -124,6 +125,9 @@ header h1, a, .fa-brands{
 nav {
     display: flex;
     justify-content: space-evenly;
+}
+
+header nav {
     width: 100%;
 }
 
@@ -144,11 +148,28 @@ nav a {
 }
 
 /* gallery section */
+h2 {
+    margin-top: 2%;
+}
+
 .gallery {
     width: 100%;
-    height: 100vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#galleryImgs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#galleryImgs img {
+    width: 29%;
+    margin: 2%;
 }
 
 /* about us section */
@@ -232,6 +253,42 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#email {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#email h3 {
+    font-size: 3rem;
+    width: 100%;
+}
+
+#email input, #email button {
+    font-size: 2rem;
+}
+
+#email input {
+    width: 80%;
+}
+
+#email button {
+    width: 20%;
+}
+
+footer nav {
+    width: 65%;
+}
+
+#copyright {
+    text-align: end;
+    width: 100%;
+    font-size: 1.4rem;
+    padding-right: 9%;
 }
 
 /* mobile media query */
