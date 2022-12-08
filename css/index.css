@@ -96,10 +96,6 @@ header {
     flex-direction: column;
 }
 
-h1 {
-    font-size: 6.5rem;
-}
-
 h1, h2, h3, p, a, .fa-brands{
     color: rgb(225, 239, 230);
     text-align: center;
@@ -294,11 +290,33 @@ footer nav {
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    h1 {
+        font-size: 4.5rem;
+        width: 75%;
+        margin-bottom: 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 3rem;
+    }
+
+    #socials {
+        margin: 5% auto;
+    }
 
     /* gallery section */
-    .gallery {
-        height: auto;
+
+    #galleryImgs {
+        width: 100%;
+    }
+
+    #galleryImgs img {
+        width: 100%;
     }
     
     /* about us section */
@@ -344,5 +362,24 @@ footer nav {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #email, #email button, #email input {
+        width: 100%;
+    }
+
+    #email {
+        align-content: center;
+    }
+
+    nav {
+        margin: 4% auto;
+    }
+
+    #copyright {
+        font-size: 1.9rem;
+        text-align: center;
     }
 }
