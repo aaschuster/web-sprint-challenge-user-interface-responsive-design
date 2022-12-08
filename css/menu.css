@@ -157,6 +157,37 @@ nav a {
     background-repeat: no-repeat;
 }
 
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+.menu-container h2 {
+    width: 100%;
+    margin: 3%;
+}
+
+.menu-section {
+    width: 35%;
+    margin: 7%;
+}
+
+.menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-item h4 {
+    color: rgb(225, 239, 230);
+}
+
+.menu-item p {
+    width: 100%;
+    text-align: start;
+}
+
 /* footer section */
 
 footer {
