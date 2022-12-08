@@ -94,6 +94,43 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, p, a, .fa-brands{
+    color: rgb(225, 239, 230);
+    text-align: center;
+}
+
+#shadedHeader {
+    background-color: rgb(0, 4, 17, .8);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    width: 20%;
+    align-items: center;
+    margin: 0.5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav {
+    width: 100%;
+}
+
+nav a {
+    font-size: 2rem;
 }
 
 /* spacer */
@@ -121,11 +158,48 @@ header {
 }
 
 /* footer section */
+
 footer {
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#email {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#email h3 {
+    font-size: 3rem;
+    width: 100%;
+}
+
+#email input, #email button {
+    font-size: 2rem;
+}
+
+#email input {
+    width: 80%;
+}
+
+#email button {
+    width: 20%;
+}
+
+footer nav {
+    width: 65%;
+}
+
+#copyright {
+    text-align: end;
+    width: 100%;
+    font-size: 1.4rem;
+    padding-right: 9%;
 }
 
 /* mobile media query */
@@ -138,15 +212,54 @@ footer {
         font-size: 4rem;
     }
 
+    h1 {
+        font-size: 4.5rem;
+        width: 75%;
+        margin-bottom: 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 3rem;
+    }
+
+    #socials {
+        margin: 5% auto;
+    }
+
     /* menu */
     .menu {
         background-image: none;
     }
 
     /* footer section */
+    
     footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #email, #email button, #email input {
+        width: 100%;
+    }
+
+    #email {
+        align-content: center;
+    }
+
+    nav {
+        margin: 4% auto;
+    }
+
+    #copyright {
+        font-size: 1.9rem;
+        text-align: center;
     }
 }

@@ -7,6 +7,7 @@
 
     <title>Sprint Challenge - Menu</title>
 
+    <link rel="stylesheet" href="/css/menu.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
 </head>
@@ -15,14 +16,22 @@
     <div>
         <!-- header -->
         <header>
-            BLOOMTECH BAR AND GRILL
-
-            <!-- nav -->
-            Menu
-            Reservations
-            Special Offers
-            Contact
-        </header>
+			<div id="shadedHeader">
+				<h1>BLOOMTECH BAR AND GRILL</h1>
+				<!-- nav -->
+				<nav>
+					<a href="./menu.html">Menu</a>
+					<a href="">Reservations</a>
+					<a href="">Special Offers</a> 
+					<a href="#contact">Contact</a>
+				</nav>
+				<div id="socials">
+					<i class="fa-brands fa-square-facebook"></i>
+					<i class="fa-brands fa-square-twitter"></i>
+					<i class="fa-brands fa-square-instagram"></i>
+				</div>
+			</div>
+		</header>
 
         <!-- spacer -->
         <div class="spacer"></div>
@@ -118,17 +127,26 @@
 
         <!-- footer -->
         <footer>
-            <!-- email signup -->
-            Join our mailing list!
-            Sign Up
-            <!-- nav -->
-            Menu
-            Reservations
-            Special Offers
-            Contact
-            <!-- copyright -->
-            ©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.
-        </footer>
+			<!-- email signup -->
+			<div id="email">
+				<h3>
+				Join our mailing list!
+				</h3>
+				<input type="text" name="email" placeholder="Email Address">
+				<button>Sign Up</button>
+			</div>
+			<!-- nav -->
+			<nav>
+				<a href="./menu.html">Menu</a>
+				<a href="">Reservations</a>
+				<a href="">Special Offers</a> 
+				<a href="#contact">Contact</a>
+			</nav>
+			<!-- copyright -->
+			<p id="copyright">
+				©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.
+			</p>
+		</footer>
     </div>
 </body>
 
