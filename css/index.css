@@ -179,8 +179,8 @@ h2 {
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
     text-align: center;
+    height: auto;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
     background-position: top;
@@ -202,6 +202,7 @@ h2 {
 
 .about-container .text {
     width: 50%;
+    margin-bottom: 3%;
 }
 
 /* contact us section */
@@ -295,6 +296,30 @@ footer nav {
     padding-right: 9%;
 }
 
+@media (max-width: 1024px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .address, .hours, .contacts {
+        width: 100%
+    }
+
+    .contacts div {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 20%;
+    }
+
+    .about-container .text {
+        width: 75%;
+    }
+
+    h1 a {
+        font-size: 6.5rem;
+    }
+}
+
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
@@ -363,6 +388,11 @@ footer nav {
     .contacts {
         width: 100%;
         padding-bottom: 2.5vh;
+    }
+
+    .contacts div {
+        flex-direction: column;
+        align-items: center;
     }
 
     /* footer section */
