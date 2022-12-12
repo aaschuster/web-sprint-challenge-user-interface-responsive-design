@@ -187,7 +187,7 @@ nav .links a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 4% 0;
+    margin: 15% 0;
 }
 
 h3 {
@@ -244,7 +244,7 @@ footer {
 }
 
 footer nav {
-    width: 65%;
+    width: 75%;
 }
 
 #copyright {
@@ -254,41 +254,20 @@ footer nav {
     padding-right: 9%;
 }
 
-/* mobile media query */
-@media (max-width: 428px) {
-    /* header section */
-    .header-title {
-        width: 75%;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 4rem;
-    }
-
-    h1 a {
-        font-size: 4.5rem;
-        width: 75%;
-    }
-
-    nav .links {
-        flex-direction: column;
+@media (max-width: 1024px) {
+    #email input, #email button {
         width: 100%;
+        height: 4vh;
     }
+}
 
-    nav .links a {
-        font-size: 3rem;
-    }
-
-    #socials {
-        margin: 5% auto;
-    }
-
-    /* menu */
+@media (max-width: 800px) {
     .menu {
         background-image: none;
         background-color: rgb(225, 239, 230);
     }
 
-    h2, h3, .menu-item p, .menu-item h4, .menu-section {
+    h2, .menu-section h3, .menu-item p, .menu-item h4, .menu-section {
         color: rgb(0, 4, 17);
         text-align: center;
         width: 100%;
@@ -325,9 +304,6 @@ footer nav {
         flex-direction: column;
         align-content: center;
     }
-
-    /* footer section */
-    
     footer {
         height: auto;
         padding-top: 2.5vh;
@@ -342,11 +318,25 @@ footer nav {
     }
 
     #email {
-        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    nav {
+    #email button, #email input {
+        width: 65%;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
+    footer nav {
         margin: 4% auto;
+    }
+
+    nav .links {
+        width: 100%;
     }
 
     #copyright {
@@ -354,4 +344,48 @@ footer nav {
         text-align: center;
         padding: 0;
     }
+
+    h1 a {
+        font-size: 4.5rem;
+        width: 75%;
+    }
+}
+
+/* mobile media query */
+@media (max-width: 428px) {
+    /* header section */
+    .header-title {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    nav .links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .links a {
+        font-size: 3rem;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    #email input, #email button {
+        width: 100%;
+    }
+
+    #socials {
+        margin: 5% auto;
+    }
+
+    /* menu */
+    
+
+    /* footer section */
+    
+    
 }
